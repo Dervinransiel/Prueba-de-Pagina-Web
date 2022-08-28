@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilosCrud.css">
+    <script> src="app.js"</script>
+   
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">Pantalla Crud</a>
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          </nav>
+    </header>
+    <main class="main-content">
+        <div class="crud-container">
+            <div class = "crud-header">
+                <h1>Estudiantes registrados</h1>
+                <button class="button is-info"> 
+                    <img src="mas.png" hspace="5"/> </i>Registrate</button>
+                    
+               
+            </div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>nombre</th>
+                    <th>Apellido</th>
+                    <th>Telefono</th>
+                    <th>email</th>
+                    <th>Opciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Manuel</td>
+                    <td>castillo</td>
+                    <td>1233566461</td>
+                    <td>@gmail,com</td>
+                    <td>
+                        <button class="button is-warning"><img src="lapiz.png"></button>
+                        <button class="button is-danger"><img src="eliminar.png" ></button>
+                    </td>
+                     
+                </tr>
+                </tbody>
+              </table>
+
+        </div>
+
+    </main>
+    <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-hard">
+            <p class="modal-card-title">registro nuevo</p>
+            <button class="delete" arial aria-label="close" id="closeRegisterModal"></button>
+            </header>
+        <section>
+            <form class="form">
+     
+        <h2 class="form_title" >Crear una nueva cuenta </h2>
+    
+        <div class="form_container">
+             
+            <div class="form_group">
+                <input type="text" id="user" class="form_input" placeholder=" ">
+                <label for="user" class="form_label">Nombre:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="user" class="form_input" placeholder=" ">
+                <label for="user" class="form_label">Apellido:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="user" class="form_input" placeholder=" ">
+                <label for="user" class="form_label">Correo Electronico</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="password" id="password" class="form_input" placeholder=" ">
+                <label for="password" class="form_label">Contraseña:</label> 
+                <span  class="form_line"></span> 
+            </div>
+        </section>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+          </script>
+        </div>
+     
+
+    </div>
+    
+</body>
+</html>

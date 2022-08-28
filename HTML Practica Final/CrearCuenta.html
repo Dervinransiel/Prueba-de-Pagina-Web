@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="formulario.css">
+
+    <title>Pagina Web Form</title>
+</head>
+<body>
+    <script> src='app.js'</script>
+
+    <form class="form">
+     
+            <h2 class="form_title" >Crear una nueva cuenta </h2>
+        
+            <div class="form_container">
+                 
+                <div class="form_group">
+                    <input type="text" id="user" class="form_input" placeholder=" ">
+                    <label for="user" class="form_label">Nombre:</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <input type="text" id="user" class="form_input" placeholder=" ">
+                    <label for="user" class="form_label">Apellido:</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <input type="text" id="user" class="form_input" placeholder=" ">
+                    <label for="user" class="form_label">Correo Electronico</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <input type="password" id="password" class="form_input" placeholder=" ">
+                    <label for="password" class="form_label">Contraseña:</label> 
+                    <span  class="form_line"></span> 
+                </div>
+               
+                
+                <a href ="PantallaCrud.html" class="form_submit" onclick="guardar()" style="text-decoration:none">Crear cuenta</a>
+            </div> 
+            <script type="module">
+                // Import the functions you need from the SDKs you need
+                import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+                // TODO: Add SDKs for Firebase products that you want to use
+                // https://firebase.google.com/docs/web/setup#available-libraries
+              
+                // Your web app's Firebase configuration
+              </script>
+            </div>
+            
+    </form>
+    <script type="text/javascript">
+        function myFuction(){
+            var x = document.getElementById("password");
+            if (x.type==="password"){
+                x.type="text";
+            } else {
+                x.type="password";
+            }
+        }
+    </script> 
+</body>

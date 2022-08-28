@@ -1,0 +1,52 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Oswald:wght@500&display=swap');
+
+body{
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+:root{
+    --dark: #000;
+}
+.navbar{
+    background-color: var(--dark);
+}
+.navbar-item{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 23px;
+}
+.navbar-item:hover{
+    color: var(--gris) !important;
+}
+.main-content{
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crud-container{
+    width: 70%;
+    padding: 2rem 3rem;
+    overflow: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
+}
+.crud-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 1rem 2rem;
+    border-bottom: 1px solid ;
+}
+
+.button span{
+    margin-left: 10px;
+}
+.crud-container h1{
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+
